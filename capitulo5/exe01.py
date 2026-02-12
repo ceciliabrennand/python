@@ -1,0 +1,4 @@
+# QUANTAS VEZES "A" APARECE EM UMA PALAVRA
+
+palavra = aurora
+

@@ -1,0 +1,5 @@
+print('Vou contar uma história. Aperte enter quando quiser ir para o próximo parágrafo.')
+input('Twenty One Pilots é uma banda de Ohio, Estados Unidos.')
+input('Eles já existem há mais de 15 anos, mas ficaram famosos com o lançamento do single Stressed Out, em 2016.')
+input('Desde então, eles já vieram ao Brasil 5 vezes para festivais e um show solo.')
+input('Agora, eles se preparam para se apresentar em turnês em diversos países. Menos no Brasil, claro.')

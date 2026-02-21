@@ -14,3 +14,10 @@ while cont <= 100:
 #     if resto == 0:
 #         print(count)
 #     count += 1
+
+# %% USANDO FOR
+max_num = 100
+
+for i in range(1, max_num + 1):
+    if i % 4 == 0:
+        print(i)

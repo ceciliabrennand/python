@@ -20,3 +20,14 @@ ultimo = len(cec) - 1
 cachorros = cec[ultimo]
 ultimo_cachorro = len(cachorros) - 1
 print(cachorros[ultimo_cachorro])
+
+# Isso poderia ser apenas:
+
+ultimo = cec[-1]
+print(ultimo)
+ultimo_cachorro = ultimo[-1]
+print(ultimo_cachorro)
+
+print(cec[0:4])
+print(cec[5][-2:])
+print(cec[::-1])

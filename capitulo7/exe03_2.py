@@ -13,3 +13,5 @@ while True:
 
 for i, j in dados.items():
     print(i, '-->', j)
+
+    

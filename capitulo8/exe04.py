@@ -1,6 +1,6 @@
 # Função com retorno
 
-def soma(a, b):
+def soma(a:int, b:int)->int:
     return a + b
 
 n1 = int(input('Digite um número: '))

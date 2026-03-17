@@ -6,12 +6,19 @@ print('------LOTERIA DA BABILÔNIA------')
 print('Você tem 3 tentativas para acertar o número sorteado.')
 
 for i in range(1, 4):
-    print(f'Tentativa número {i}: ')
-    num_escolhido = int(input('Escolha um número de 1 a 100: '))
-    if not 1 <= num_escolhido <= 100:
-        print('Número invalido. Por favor, escolha um número de 1 a 100.')
-        continue
-    elif num_escolhido > num_sorteado:
+    
+    while True:  
+        print(f'Tentativa número {i}: ')  
+        try:
+            num_escolhido = int(input('Escolha um número de 1 a 100: '))
+        except ValueError:
+            print('Isso não é um número. Tente novamente.')
+            continue
+        if 1 <= num_escolhido <= 100:
+            break
+        print('Número invalido. Por favor, escolha um número de 1 a 100.')    
+        
+    if num_escolhido > num_sorteado:
         print('Errou. O número sorteado é menor.')
     elif num_escolhido < num_sorteado:
         print('Errou. O número sorteado é maior.')

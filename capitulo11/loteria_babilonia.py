@@ -1,29 +1,25 @@
-import random
-
-def loteria(numero:int):
-    if numero < num_sorteado:
-        resposta = print('Errou. Seu chute foi menor que o número sorteado.')
-        return resposta
-    elif numero > num_sorteado:
-        resposta = print('Errou. Seu chute foi maior que o número sorteado.')
-        return resposta                 
+import random     
    
 num_sorteado = random.randint(1, 100)
-i = 1
 
 print('------LOTERIA DA BABILÔNIA------')
 print('Você tem 3 tentativas para acertar o número sorteado.')
 
-while i < 4:
+for i in range(1, 4):
     print(f'Tentativa número {i}: ')
     num_escolhido = int(input('Escolha um número de 1 a 100: '))
-    if num_escolhido != num_sorteado:
-        loteria(num_escolhido) 
-        i += 1
+    if not 1 <= num_escolhido <= 100:
+        print('Número invalido. Por favor, escolha um número de 1 a 100.')
+        continue
+    elif num_escolhido > num_sorteado:
+        print('Errou. O número sorteado é menor.')
+    elif num_escolhido < num_sorteado:
+        print('Errou. O número sorteado é maior.')
     else:
         print('Parabéns! Você acertou o número sorteado.')
         break
 
-print(f'''Que pena, você não conseguiu. 
+else:
+    print(f'''Que pena, você não conseguiu. 
 O número sorteado era {num_sorteado}.
 Tente novamente!''')

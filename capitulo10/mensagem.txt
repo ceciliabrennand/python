@@ -1,1 +1,4 @@
 Aprendendo arquivos em Python.
+Linha 2
+Linha 3
+Linha 4

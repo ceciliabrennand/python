@@ -2,7 +2,7 @@ def soma(conteudo):
     total_palavras = 0
     for i in range(len(conteudo)):
         conteudo[i] = conteudo[i].strip('\n')
-        palavras = conteudo[i].split()
+        palavras = conteudo[i].split() #Tem que usar split porque o computador não entende que 1 string tem palavras separadas
 
         for palavra in palavras:
             total_palavras += 1

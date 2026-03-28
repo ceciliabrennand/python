@@ -1,15 +1,24 @@
 # %%
 
-import requests
+import requests # para realizar requisições na web
+import json # para tratar json de listas/dicionarios para arquivos json
+ceps = [
+    "50010010",
+    "50010050",
+    "52061055",
+    "50030030",
+    "50030120"
+]
 
-url = "https://viacep.com.br/ws/19060100/json/"
+url = "https://viacep.com.br/ws/{cep}/json/"
 
-requisicao = requests.get(url)
+dados = []
+for i in ceps:
+    resposta = requests.get(url.format(cep=i))
+    if resposta.status_code == 200:
+        dados.append(resposta.json())
 
-# %%
-dados = requisicao.json()
-# %%
+print(dados)
 
-
-
-# %%
+with open('capitulo12/ceps.json', 'w', encoding='utf-8') as arquivo:
+    json.dump(dados, arquivo, ensure_ascii=False, indent=4)

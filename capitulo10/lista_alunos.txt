@@ -1,3 +1,7 @@
 joão; 18
 maria; 19
 lucas; 20
+juca; 18
+maria; 20
+joana; 23
+tulio; 21

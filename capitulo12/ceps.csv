@@ -1,0 +1,6 @@
+;cep;logradouro;complemento;unidade;bairro;localidade;uf;estado;regiao;ibge;gia;ddd;siafi
+0;50010-010;Rua Siqueira Campos;;;Santo Antônio;Recife;PE;Pernambuco;Nordeste;2611606;;81;2531
+1;50010-050;Rua Doutor Moacir Baracho;;;Santo Antônio;Recife;PE;Pernambuco;Nordeste;2611606;;81;2531
+2;52061-055;Rua Marechal Rondon;lado par;;Casa Forte;Recife;PE;Pernambuco;Nordeste;2611606;;81;2531
+3;50030-030;Rua da Alfândega;;;Recife;Recife;PE;Pernambuco;Nordeste;2611606;;81;2531
+4;50030-120;Rua Mariz e Barros;;;Recife;Recife;PE;Pernambuco;Nordeste;2611606;;81;2531

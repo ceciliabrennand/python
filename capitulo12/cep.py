@@ -28,7 +28,7 @@ print(dados)
 # %%
 
 dataset = pd.DataFrame(dados)
-dataset
+dataset.to_csv('capitulo12/ceps.csv', sep=';')
 
 # %%
 

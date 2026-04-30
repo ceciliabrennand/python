@@ -6,6 +6,7 @@ print('''Tipos:
 ''')
 
 tipo = int(input('Escolha o tipo: '))
+# poderia tirar o int e botar pra escrever a opção, depois tipo = tipo.lower() pra ficar tudo minúsculo 
 
 print('''Sabores:
       1) Morango
@@ -33,4 +34,7 @@ else:
 if cobertura == 1 or cobertura == 2:
     valor += 1.50
 
-print('O valor total ficou: R$', valor)
+# Aqui, poderia ser if cobertura in ['caramelo', 'morango']:
+# valor += 1.50
+
+print(f'O valor total ficou: R$ {valor}')
